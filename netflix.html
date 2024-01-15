@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #111;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav img {
+            width: 100px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            background: url('your-background-image.jpg') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .movie-list {
+            display: flex;
+            overflow-x: scroll;
+            margin-top: 20px;
+        }
+
+        .movie-card {
+            flex: 0 0 auto;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .movie-card img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NETFLIX</h1>
+    </header>
+
+    <nav>
+        <img src="netflix.png" alt="Netflix Logo">
+        <!-- You can add more navigation items if needed -->
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button>Join Free for a Month</button>
+        </div>
+
+        <div class="movie-list">
+            <div class="movie-card">
+                <img src="paglu.jpg" alt="paglu">
+            </div>
+            <div class="movie-card">
+                <img src="paglu2.jpg" alt="paglu 2">
+            </div>
+           
+        <div class="movie-card">
+            <img src="sedin.jpg" alt="sedin dekha hoyechilo">
+    </div>
+   
+<div class="movie-card">
+    <img src="rongbaaz.jpg" alt="rongbaaz">
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Netflix</p>
+    </footer>
+
+</body>
+</html>
